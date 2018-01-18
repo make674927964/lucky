@@ -202,14 +202,16 @@ option {
 .wn-ground {
     width: 100%;
     z-index: 22;
-        height: 0;
+        height: 1750px;
+        margin-top: -1750px;
+
 }
 .wn-ground img {
+    display: block;
     width: 100%;
     /* position: absolute; */
     /* left: 0; */
     /* top: 215%; */
-    margin-top: -3100px;
     z-index: 50;
 }
 .lipGloss02 {
