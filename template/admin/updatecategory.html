@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}bootstrap.css">
+    <script src="{JS_PATH}jquery.min.js"></script>
+</head>
+<style>
+    #myform{
+        margin-top:5%;
+        margin-left:5%;
+    }
+    #myhide{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin:auto;
+        z-index: 999999;
+        display: none;
+        text-align: center;
+        font-size: 18px;
+    }
+</style>
+<body>
+<div class="panel-heading">
+    <h3 class="panel-title">添加栏目</h3>
+</div>
+<div id="myhide" class="alert alert-success col-md-8" role="alert">...</div>
+<form id="myform" action="index.php?m=admin&f=category&a=add" method="post" enctype="multipart/form-data">
+    <div class="form-group col-md-8">
+        <label for="select">请选择上级栏目</label>
+        <select class="form-control" name="id" id="select">
+            <!--<option value="0">作为一级栏目存在</option>-->
+            {$str}
+        </select>
+    </div>
+    <div class="form-group col-md-8">
+        <label for="title">栏目名称</label>
+        <input type="text" class="form-control" name="name"  value="{$arr['name']}" id="title" placeholder="请输入内容">
+    </div>
+    <div class="form-group col-md-8">
+        <label for="file">栏目图片</label>
+        <input type="file" name="img[]" id="file" multiple>
+    </div>
+    <div class="form-group div-btn col-md-10">
+        <button class="btn btn-success go">添加</button>
+    </div>
+</form>
+</body>
+</html>

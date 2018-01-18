@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{CSS_PATH}bootstrap.min.css">
+</head>
+<style>
+    .box{
+        width:600px;
+        height:400px;
+        position: fixed;
+        left:0;
+        top:0;
+        right:0;
+        bottom: 0;
+        margin:auto;
+        box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    }
+    p{
+        text-align: center;
+        font-size: 20px;
+    }
+    p.h{
+        font-size: 40px;
+        height:200px;
+        line-height: 200px;
+        margin-bottom: 20px;
+        background:rgba(99, 156, 185, 0.92);
+        color: #fff;
+    }
+    p > span{
+        color: red;
+        font-size: 24px;
+    }
+</style>
+<body>
+    <div class="box">
+        <p class="h" >
+          {$mess}
+        </p>
+        <p class="text-muted">
+            <span>3</span>秒钟之后，自动跳转，<a href="{$url}">点击立即跳转</a>
+        </p>
+    </div>
+</body>
+</html>
+<script>
+    let s=3;
+    let span=document.querySelector('p > span');
+    let a=span.nextElementSibling;
+    function change() {
+        s--;
+        span.innerHTML=s;
+        if(s==0){
+            location.href=a.href;
+        }
+    }
+    let t=setInterval(change,1000);
+</script>
