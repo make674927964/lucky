@@ -1,0 +1,225 @@
+@import "base.css";
+
+body{
+    /*background: black;*/
+    /*opacity: 0.7;*/
+    background: rgba(0,0,0,0.5);
+}
+.logoin{
+    width: 872px;
+    height: 534px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.logoin-top{
+    width: 100%;
+    height: 95px;
+    overflow: hidden;
+    position: relative;
+}
+.logoin-top-word{
+    font-size: 30px;
+    font-family: "微软雅黑";
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 45px;
+}
+.logoin-top-img{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+.logoin-top-img img{
+    width: auto;
+    height: 100%;
+    display: block;
+}
+.logoin-bottom{
+    width: 100%;
+    height: 439px;
+}
+.logoin-left{
+    width: 527px;
+    height: 100%;
+    background: #fff;
+    float: left;
+    overflow: hidden;
+}
+.logoin-content{
+    width: 390px;
+    height: 346px;
+    margin: 0 auto;
+    margin-top: 66px;
+    overflow: hidden;
+}
+.form{
+    width: 364px;
+    height: 30px;
+    margin:0 auto;
+}
+.form-left{
+    width: 25px;
+    height: 30px;
+    float: left;
+}
+.form-left i{
+    text-align: center;
+    font-family: 'iconfont';
+    font-style: normal;
+    color: #7f7f7f;
+    font-size: 30px;
+    line-height: 30px;
+
+}
+.form-right{
+    width: 309px;
+    height: 100%;
+    margin-left: 30px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.form-control{
+    width: 100%;
+    height: 18px;
+    border: none;
+    outline: none;
+    padding-left:20px ;
+}
+.form-bottom{
+    width: 100%;
+    height: 4px;
+    margin-bottom: 0;
+}
+.form-bottom-circle{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #acacac;
+    float: left;
+}
+.form-bottom-border{
+    width: 301px;
+    height: 1px;
+    background:#acacac;
+    float: left;
+    margin-top: 2px;
+}
+.password{
+    margin-top: 71px;
+}
+.form-clearfix{
+    width: 302px;
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+.form-clearfix-rem{
+    height: 100%;
+    float: left;
+}
+.form-clearfix-rem label{
+    height: 16px;
+    z-index: 20;
+}
+.form-clearfix-rem label input{
+    display: block;
+    float: left;
+    margin-top: 1px;
+    height: 100%;
+}
+.form-clearfix-rem label span{
+    display: block;
+    float: left;
+    height: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "微软雅黑";
+    color: #acacac;
+    margin-left: 10px;
+}
+.form-forget{
+    float: right;
+    height: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "微软雅黑";
+    color: #acacac;
+}
+.dengru{
+    width: 100%;
+    height: 36px;
+    margin-top: 45px;
+
+}
+.dengru-logoin{
+    width: 135px;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    border: none;
+    float: left;
+    background-image:-webkit-linear-gradient(left,#f11b14,#fe6903);
+    cursor: pointer;
+}
+.dengru-zuce{
+    width: 135px;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 2px solid #f01515;
+    float: right;
+    background: #fff;
+    cursor: pointer;
+}
+.logoin-word{
+    height: 16px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 33px;
+    color: #605f5f;
+}
+.logoin-icon{
+    width: 126px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 11px;
+}
+.logoin-icon-biao{
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+    margin-right: 14px;
+}
+.logoin-icon-biao i{
+    font-family: 'iconfont';
+    font-style: normal;
+    color: #7f7f7f;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.logoin-right{
+    width: 345px;
+    height: 100%;
+    float: left;
+    background: #82040f;
+    position: relative;
+}
+.logoin-right img{
+    display: block;
+    position: absolute;
+    top: -62px;
+    left: -22px;
+}
