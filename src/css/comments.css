@@ -115,7 +115,6 @@ footer {
     justify-content: space-between
 }
 .city select {
-        color: white;
         border:none;
         background: #5b5b5b;
         height:33px;
@@ -187,9 +186,52 @@ option {
     flex-wrap:wrap-reverse;
 }
 .flaming ul li {
+    background: #fff;
     position: relative;
     width: 240px;
     height: 240px;
+}
+.flaming ul li:hover {
+    background: #c61d21;
+}
+.flaming ul li a {
+    color: #000;
+    margin: 0;
+    width: 240px;
+    height: 240px;
+}
+.wn-move {
+    width: 240px;
+    height: 240px;
+}
+.flaming ul li:nth-child(2n-1) a div i {
+    margin-left: 130px ;
+    font-size: 45px;
+    line-height: 200px;
+}
+.flaming ul li:nth-child(2n) a div i {
+    margin-left: 160px ;
+    font-size: 45px;
+    line-height: 200px;
+}
+.flaming ul li:nth-child(2n) a .wn-deg {
+    display: block;
+    transform: rotate(180deg);
+}
+.wn-move-title {
+    position: absolute;
+    left: 50px;
+    top:110px;
+    margin: auto;
+}
+.wn-move-title p {
+    line-height: 5px;
+}
+.p1 {
+    font-size: 8px;
+}
+.p2 {
+    font-size: 5px;
 }
 .flaming ul li img {
     position: absolute;
