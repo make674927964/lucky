@@ -164,7 +164,7 @@ option {
 }
 .show-title a {
     color: #5c5c5c;
-    margin-left: 49px;
+    margin-left: 100px;
 
 }
 .lipGloss {
@@ -294,9 +294,9 @@ option {
 }
 .wn-perfume {
     width: 285px;
-    text-align: center;
     line-height: 17px;
     height: 149px;
+    margin-left: 40px;
 }
 .wn-perfume p {
     font-size: 2px;
